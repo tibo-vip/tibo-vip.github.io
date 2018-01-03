@@ -5,10 +5,10 @@ import Helmet from 'react-helmet'
 const SecondPage = () => (
   <div style={{paddingBottom: 50}}>
     <Helmet
-      title="商务合作 - 体博会网址导航"
+      title="商务合作 - 体博导航"
       meta={[
-        { name: 'description', content: '体博会网址导航' },
-        { name: 'keywords', content: '体博会尺寸,体博会, 体博会网址导航' },
+        { name: 'description', content: '商务合作 - 体博导航' },
+        { name: 'keywords', content: '体博导航商务合作' },
       ]}
     />
     <div className="breadcrumb">

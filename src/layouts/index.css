@@ -41,10 +41,12 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   text-decoration: none;
+  color: #333;
 }
 a:active,
 a:hover {
   outline-width: 0;
+  color: #557700;
 }
 abbr[title] {
   border-bottom: none;
@@ -656,7 +658,7 @@ html, body , body > div {
 .breadcrumb {
     padding: 15px;
     margin-bottom: 15px;
-    background-color: #f3f8ff;
+    background-color: #efefef;
 }
 
 .breadcrumb-link {
@@ -677,8 +679,8 @@ html, body , body > div {
     line-height: 40px;
 }
 .nav-list li.active{
-    color: #ff9c00;
-    border-bottom: 2px solid #ff9c00;
+    color: #557700;
+    border-bottom: 2px solid #557700;
 }
 
 .nav-list>li a {
@@ -690,7 +692,7 @@ html, body , body > div {
 }
 
 .nav-list>li:hover a, .nav-list>li:hover, .nav-list>.active a {
-    color: #ff9c00;
+    color: #557700;
     font-weight: 700;
 }
 
@@ -702,7 +704,7 @@ html, body , body > div {
 
 .index-nav-list li a{
     padding: 0 25px;
-    color: #333;
+    color: #557700;
 }
 
 .news-list{

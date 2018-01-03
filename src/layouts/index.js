@@ -12,7 +12,7 @@ const HeaderNav = ({location}) => {
     <div
       className="header-nav"
       style={{
-        borderBottom: '2px solid #343434',
+        borderBottom: '2px solid #cce198',
         height: 40,
         lineHeight: 40,
       }}
@@ -38,14 +38,14 @@ const HeaderNav = ({location}) => {
           <Link
             to="/fun"
           >
-            体博会知多少
+            体彩知多少
           </Link>
         </li>
         <li className={pathname.match(/\/news/i) ? 'active' : null}>
           <Link
             to="/news"
           >
-            体博会行业动态
+            体彩行业动态
           </Link>
         </li>
         <li className={pathname.match(/\/price/i) ? 'active' : null}>
@@ -76,7 +76,7 @@ const HeaderTop = () => (
           textDecoration: 'none',
         }}
       >
-        <img src={'/img/logo.png'} alt="体博会网址导航" />
+        <img src={'/img/logo.png'} alt="体博导航" />
       </Link>
     </div>
   </div>
@@ -108,8 +108,9 @@ const Footer = () => (
   <div
     style={{
       width:'100%',
-      background: '#efefef',
+      background: '#fff',
       borderTop: '1px solid #eee',
+      fontSize: '12px',
     }}
   >
     <div
@@ -120,10 +121,12 @@ const Footer = () => (
         textAlign: 'center'
       }}
     >
-      注：本站内容全部原创或者来源于网络，如遇引用版权问题，欢迎与本站站长联系！<br /><br />
+    <font style={{color:'#951212'}}>体博导航郑重提示：彩票有风险，投注需谨慎！禁止向未满18周岁的青少年出售彩票！</font><br /><br />
       <a href="mailto:kbl_1794@qq.com" rel="nofollow">联系站长</a> | <a href="mailto:kbl_1794@qq.com" rel="nofollow">商务合作</a><br />
-      友情链接：<a href="http://www.iampua.com/" target="_blank">泡学达人</a> | <a href="http://www.a4z.cn/" target="_blank">A4纸网</a> | <a href="mailto:kbl_1794@qq.com" rel="nofollow">申请友情链接</a><br />
-      体博会网址导航 - 专注于体博会  保留所有权 © 2017~2018 tibo.vip
+      友情链接：<a href="http://www.iampua.com/" target="_blank">泡学达人</a> | <a href="http://www.a4z.cn/" target="_blank">A4纸网</a> | <a href="mailto:kbl_1794@qq.com" rel="nofollow">申请友情链接</a><br /><br />
+      <a href="http://www.bj.cyberpolice.cn/index.jsp" rel="nofollow"><img src={'/img/110.png'} alt="体博导航网络110"/></a> <a href="http://www.bjjubao.org/" rel="nofollow"><img src={'/img/report.png'}  alt="体博导航不良信息举报"/></a>
+      <br />
+      体博导航 - 专注于国家体育彩票  保留所有权 © 2017~2018 tibo.vip
     </div>
   </div>
 )
@@ -160,7 +163,10 @@ class TemplateWrapper extends Component {
     return (
       <div style={{minHeight:'100%',position:'relative'}}>
         <Helmet
-          link={[{type:'image/x-icon',rel:'shortcut icon',href:'/favicon.ico'}]}
+          link={[
+            {type:'image/x-icon',rel:'shortcut icon',href:'/favicon.ico'},
+            {rel:'stylesheet',href:'https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css'},
+          ]}
           script={[{src:'https://hm.baidu.com/hm.js?96d9604e16c1245896d37f6e50c29669'}]}
         />
         <Header location={location}/>
