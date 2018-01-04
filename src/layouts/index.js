@@ -167,7 +167,7 @@ class TemplateWrapper extends Component {
             {type:'image/x-icon',rel:'shortcut icon',href:'/favicon.ico'},
             {rel:'stylesheet',href:'https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css'},
           ]}
-          script={[{src:'https://hm.baidu.com/hm.js?96d9604e16c1245896d37f6e50c29669'}]}
+          script={[{src:'https://hm.baidu.com/hm.js?07c00bbf1b549b4d345bbb671ba8b401'}]}
         />
         <Header location={location}/>
         <div
